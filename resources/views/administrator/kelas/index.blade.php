@@ -32,9 +32,9 @@
                             <thead>
                                 <tr>
                                     <th width="25">No</th>
-                                    <th width="">Kode</th>
-                                    <th width="">Kelas</th>
-                                    <th width="">Alias</th>
+                                    <th width="100">Kode</th>
+                                    <th width="100">Kelas</th>
+                                    <th width="100%">Alias</th>
                                     <th width="200">Action</th>
                                 </tr>
                             </thead>

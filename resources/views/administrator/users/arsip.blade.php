@@ -31,10 +31,10 @@
                             <thead>
                                 <tr>
                                     <th width="25">No</th>
-                                    <th width="">User Group</th>
-                                    <th width="">Nama</th>
-                                    <th width="">Email</th>
-                                    <th width="">Status</th>
+                                    <th width="150">User Group</th>
+                                    <th width="100%">Nama</th>
+                                    <th width="200">Email</th>
+                                    <th width="100">Status</th>
                                     <th width="200">Action</th>
                                 </tr>
                             </thead>

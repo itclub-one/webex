@@ -31,8 +31,8 @@
                             <thead>
                                 <tr>
                                     <th width="30">No</th>
-                                    <th width="">Nama</th>
-                                    <th width="">Identifier</th>
+                                    <th width="100%">Nama</th>
+                                    <th width="100%">Identifier</th>
                                     <th width="200">Action</th>
                                 </tr>
                             </thead>

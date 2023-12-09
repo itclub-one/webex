@@ -37,9 +37,9 @@
                             <thead>
                                 <tr>
                                     <th width="25">No</th>
-                                    <th width="">Nama</th>
-                                    <th width="">Sekbid</th>
-                                    <th width="">Slug</th>
+                                    <th width="100%">Nama</th>
+                                    <th width="50">Sekbid</th>
+                                    <th width="300">Slug</th>
                                     <th width="200">Action</th>
                                 </tr>
                             </thead>

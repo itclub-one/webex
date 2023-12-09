@@ -34,8 +34,8 @@
                             <thead>
                                 <tr>
                                     <th width="25">No</th>
-                                    <th width="">Nama Kegiatan</th>
-                                    <th width="">Ekstrakurikuler</th>
+                                    <th width="100%">Nama Kegiatan</th>
+                                    <th width="200">Ekstrakurikuler</th>
                                     <th width="200">Action</th>
                                 </tr>
                             </thead>

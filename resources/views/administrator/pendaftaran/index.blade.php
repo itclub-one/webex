@@ -37,10 +37,10 @@
                             <thead>
                                 <tr>
                                     <th width="25">No</th>
-                                    <th width="">Nama</th>
-                                    <th width="">Kelas</th>
-                                    <th width="">Jurusan</th>
-                                    <th width="">Ekstrakurikuler</th>
+                                    <th width="100%">Nama</th>
+                                    <th width="50">Kelas</th>
+                                    <th width="100">Jurusan</th>
+                                    <th width="200">Ekstrakurikuler</th>
                                     <th width="150">Status</th>
                                     <th width="200">Action</th>
                                 </tr>

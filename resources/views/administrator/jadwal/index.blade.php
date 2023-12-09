@@ -32,7 +32,7 @@
                             <thead>
                                 <tr>
                                     <th width="25">No</th>
-                                    <th width="">Hari</th>
+                                    <th width="100%">Hari</th>
                                     <th width="200">Action</th>
                                 </tr>
                             </thead>
