@@ -64,7 +64,7 @@ Route::prefix('admin')->group(function () {
         Route::post('user-groups/save', [UserGroupController::class, 'save'])->name('admin.user_groups.save');
         Route::get('user-groups/edit/{id}', [UserGroupController::class, 'edit'])->name('admin.user_groups.edit');
         Route::put('user-groups/update', [UserGroupController::class, 'update'])->name('admin.user_groups.update');
-        Route::delete('user-groups/delete', [UserGroupController::class, 'delete'])->name('admin.user_groups.delete');
+        Route::get('user-groups/delete', [UserGroupController::class, 'delete'])->name('admin.user_groups.delete');
         Route::get('user-groups/getDetail-{id}', [UserGroupController::class, 'getDetail'])->name('admin.user_groups.getDetail');
         Route::post('user-groups/changeStatus',[UserGroupController::class, 'changeStatus'])->name('admin.user_groups.changeStatus');
         Route::post('user-groups/checkName',[UserGroupController::class, 'checkName'])->name('admin.user_groups.checkName');
@@ -76,7 +76,7 @@ Route::prefix('admin')->group(function () {
         Route::post('users/save', [UserController::class, 'save'])->name('admin.users.save');
         Route::get('users/edit/{id}', [UserController::class, 'edit'])->name('admin.users.edit');
         Route::put('users/update', [UserController::class, 'update'])->name('admin.users.update');
-        Route::delete('users/delete', [UserController::class, 'delete'])->name('admin.users.delete');
+        Route::get('users/delete', [UserController::class, 'delete'])->name('admin.users.delete');
         Route::get('users/getDetail-{id}', [UserController::class, 'getDetail'])->name('admin.users.getDetail');
         Route::get('users/getUserGroup', [UserController::class, 'getUserGroup'])->name('admin.users.getUserGroup');
         Route::get('users/getEskul', [UserController::class, 'getEskul'])->name('admin.users.getEskul');
@@ -88,7 +88,7 @@ Route::prefix('admin')->group(function () {
         Route::get('users/arsip',[UserController::class, 'arsip'])->name('admin.users.arsip');
         Route::get('users/arsip/getDataArsip',[UserController::class, 'getDataArsip'])->name('admin.users.getDataArsip');
         Route::put('users/arsip/restore',[UserController::class, 'restore'])->name('admin.users.restore');
-        Route::delete('users/arsip/forceDelete',[UserController::class, 'forceDelete'])->name('admin.users.forceDelete');
+        Route::get('users/arsip/forceDelete',[UserController::class, 'forceDelete'])->name('admin.users.forceDelete');
         
         //Profile
         Route::get('profile/{kode}', [ProfileController::class, 'index'])->name('admin.profile');
@@ -108,7 +108,7 @@ Route::prefix('admin')->group(function () {
         Route::post('module/save', [ModuleController::class, 'save'])->name('admin.module.save');
         Route::get('module/edit/{id}', [ModuleController::class, 'edit'])->name('admin.module.edit');
         Route::put('module/update', [ModuleController::class, 'update'])->name('admin.module.update');
-        Route::delete('module/delete', [ModuleController::class, 'delete'])->name('admin.module.delete');
+        Route::get('module/delete', [ModuleController::class, 'delete'])->name('admin.module.delete');
         Route::get('module/getDetail-{id}', [ModuleController::class, 'getDetail'])->name('admin.module.getDetail');
         
         //Jadwal
@@ -118,7 +118,7 @@ Route::prefix('admin')->group(function () {
         Route::post('jadwal/save', [JadwalController::class, 'save'])->name('admin.jadwal.save');
         Route::get('jadwal/edit/{id}', [JadwalController::class, 'edit'])->name('admin.jadwal.edit');
         Route::put('jadwal/update', [JadwalController::class, 'update'])->name('admin.jadwal.update');
-        Route::delete('jadwal/delete', [JadwalController::class, 'delete'])->name('admin.jadwal.delete');
+        Route::get('jadwal/delete', [JadwalController::class, 'delete'])->name('admin.jadwal.delete');
         Route::post('jadwal/checkHari',[JadwalController::class, 'checkHari'])->name('admin.jadwal.checkHari');
         Route::get('jadwal/getHari', [JadwalController::class, 'getHari'])->name('admin.jadwal.getHari');
         
@@ -129,7 +129,7 @@ Route::prefix('admin')->group(function () {
         Route::post('sekbid/save', [SekbidController::class, 'save'])->name('admin.sekbid.save');
         Route::get('sekbid/edit/{id}', [SekbidController::class, 'edit'])->name('admin.sekbid.edit');
         Route::put('sekbid/update', [SekbidController::class, 'update'])->name('admin.sekbid.update');
-        Route::delete('sekbid/delete', [SekbidController::class, 'delete'])->name('admin.sekbid.delete');
+        Route::get('sekbid/delete', [SekbidController::class, 'delete'])->name('admin.sekbid.delete');
         Route::post('sekbid/checkTingkat',[SekbidController::class, 'checkTingkat'])->name('admin.sekbid.checkTingkat');
         Route::get('sekbid/getDetail-{id}', [SekbidController::class, 'getDetail'])->name('admin.sekbid.getDetail');
 
@@ -140,7 +140,7 @@ Route::prefix('admin')->group(function () {
         Route::post('eskul/save', [EskulController::class, 'save'])->name('admin.eskul.save');
         Route::get('eskul/edit/{id}', [EskulController::class, 'edit'])->name('admin.eskul.edit');
         Route::put('eskul/update', [EskulController::class, 'update'])->name('admin.eskul.update');
-        Route::delete('eskul/delete', [EskulController::class, 'delete'])->name('admin.eskul.delete');
+        Route::get('eskul/delete', [EskulController::class, 'delete'])->name('admin.eskul.delete');
         Route::get('eskul/getDetail-{id}', [EskulController::class, 'getDetail'])->name('admin.eskul.getDetail');
         Route::post('eskul/checkNama',[EskulController::class, 'checkNama'])->name('admin.eskul.checkNama');
         Route::get('eskul/getSekbid', [EskulController::class, 'getSekbid'])->name('admin.eskul.getSekbid');
@@ -149,7 +149,7 @@ Route::prefix('admin')->group(function () {
         Route::get('eskul/arsip',[EskulController::class, 'arsip'])->name('admin.eskul.arsip');
         Route::get('eskul/arsip/getDataArsip',[EskulController::class, 'getDataArsip'])->name('admin.eskul.getDataArsip');
         Route::put('eskul/arsip/restore',[EskulController::class, 'restore'])->name('admin.eskul.restore');
-        Route::delete('eskul/arsip/forceDelete',[EskulController::class, 'forceDelete'])->name('admin.eskul.forceDelete');
+        Route::get('eskul/arsip/forceDelete',[EskulController::class, 'forceDelete'])->name('admin.eskul.forceDelete');
 
         //Kelas
         Route::get('kelas', [KelasController::class, 'index'])->name('admin.kelas');
@@ -158,7 +158,7 @@ Route::prefix('admin')->group(function () {
         Route::post('kelas/save', [KelasController::class, 'save'])->name('admin.kelas.save');
         Route::get('kelas/edit/{id}', [KelasController::class, 'edit'])->name('admin.kelas.edit');
         Route::put('kelas/update', [KelasController::class, 'update'])->name('admin.kelas.update');
-        Route::delete('kelas/delete', [KelasController::class, 'delete'])->name('admin.kelas.delete');
+        Route::get('kelas/delete', [KelasController::class, 'delete'])->name('admin.kelas.delete');
         Route::post('kelas/checkKelas',[KelasController::class, 'checkKelas'])->name('admin.kelas.checkKelas');
         Route::post('kelas/checkKodeRomawi',[KelasController::class, 'checkKodeRomawi'])->name('admin.kelas.checkKodeRomawi');
         
@@ -169,7 +169,7 @@ Route::prefix('admin')->group(function () {
         Route::post('jurusan/save', [JurusanController::class, 'save'])->name('admin.jurusan.save');
         Route::get('jurusan/edit/{id}', [JurusanController::class, 'edit'])->name('admin.jurusan.edit');
         Route::put('jurusan/update', [JurusanController::class, 'update'])->name('admin.jurusan.update');
-        Route::delete('jurusan/delete', [JurusanController::class, 'delete'])->name('admin.jurusan.delete');
+        Route::get('jurusan/delete', [JurusanController::class, 'delete'])->name('admin.jurusan.delete');
         Route::post('jurusan/checkNama',[JurusanController::class, 'checkNama'])->name('admin.jurusan.checkNama');
 
         //Anggota
@@ -179,7 +179,7 @@ Route::prefix('admin')->group(function () {
         Route::post('anggota/save', [AnggotaController::class, 'save'])->name('admin.anggota.save');
         Route::get('anggota/edit/{id}', [AnggotaController::class, 'edit'])->name('admin.anggota.edit');
         Route::put('anggota/update', [AnggotaController::class, 'update'])->name('admin.anggota.update');
-        Route::delete('anggota/delete', [AnggotaController::class, 'delete'])->name('admin.anggota.delete');
+        Route::get('anggota/delete', [AnggotaController::class, 'delete'])->name('admin.anggota.delete');
         Route::get('anggota/getDetail-{id}', [AnggotaController::class, 'getDetail'])->name('admin.anggota.getDetail');
         Route::post('anggota/checkTelepon',[AnggotaController::class, 'checkTelepon'])->name('admin.anggota.checkTelepon');
         Route::post('anggota/checkEmail',[AnggotaController::class, 'checkEmail'])->name('admin.anggota.checkEmail');
@@ -196,7 +196,7 @@ Route::prefix('admin')->group(function () {
         Route::post('pendaftaran/save', [PendaftaranController::class, 'save'])->name('admin.pendaftaran.save');
         Route::get('pendaftaran/edit/{id}', [PendaftaranController::class, 'edit'])->name('admin.pendaftaran.edit');
         Route::put('pendaftaran/update', [PendaftaranController::class, 'update'])->name('admin.pendaftaran.update');
-        Route::delete('pendaftaran/delete', [PendaftaranController::class, 'delete'])->name('admin.pendaftaran.delete');
+        Route::get('pendaftaran/delete', [PendaftaranController::class, 'delete'])->name('admin.pendaftaran.delete');
         Route::get('pendaftaran/getDetail-{id}', [PendaftaranController::class, 'getDetail'])->name('admin.pendaftaran.getDetail');
         Route::post('pendaftaran/checkTelepon',[PendaftaranController::class, 'checkTelepon'])->name('admin.pendaftaran.checkTelepon');
         Route::post('pendaftaran/checkEmail',[PendaftaranController::class, 'checkEmail'])->name('admin.pendaftaran.checkEmail');
@@ -205,7 +205,7 @@ Route::prefix('admin')->group(function () {
         Route::get('pendaftaran/getKelas', [PendaftaranController::class, 'getKelas'])->name('admin.pendaftaran.getKelas');
         Route::get('pendaftaran/getJurusan', [PendaftaranController::class, 'getJurusan'])->name('admin.pendaftaran.getJurusan');
         Route::post('pendaftaran/accept', [PendaftaranController::class, 'accept'])->name('admin.pendaftaran.accept');
-        Route::delete('pendaftaran/reject', [PendaftaranController::class, 'reject'])->name('admin.pendaftaran.reject');
+        Route::get('pendaftaran/reject', [PendaftaranController::class, 'reject'])->name('admin.pendaftaran.reject');
         Route::get('pendaftaran/export', [PendaftaranController::class, 'export'])->name('admin.pendaftaran.export');
 
         //Dokumentasi
@@ -215,7 +215,7 @@ Route::prefix('admin')->group(function () {
         Route::post('dokumentasi/save', [DokumentasiController::class, 'save'])->name('admin.dokumentasi.save');
         Route::get('dokumentasi/edit/{id}', [DokumentasiController::class, 'edit'])->name('admin.dokumentasi.edit');
         Route::put('dokumentasi/update', [DokumentasiController::class, 'update'])->name('admin.dokumentasi.update');
-        Route::delete('dokumentasi/delete', [DokumentasiController::class, 'delete'])->name('admin.dokumentasi.delete');
+        Route::get('dokumentasi/delete', [DokumentasiController::class, 'delete'])->name('admin.dokumentasi.delete');
         Route::get('dokumentasi/getDetail-{id}', [DokumentasiController::class, 'getDetail'])->name('admin.dokumentasi.getDetail');
         Route::get('dokumentasi/getEskul', [DokumentasiController::class, 'getEskul'])->name('admin.dokumentasi.getEskul');
 
@@ -226,7 +226,7 @@ Route::prefix('admin')->group(function () {
         Route::post('berita/save', [BeritaController::class, 'save'])->name('admin.berita.save');
         Route::get('berita/edit/{id}', [BeritaController::class, 'edit'])->name('admin.berita.edit');
         Route::put('berita/update', [BeritaController::class, 'update'])->name('admin.berita.update');
-        Route::delete('berita/delete', [BeritaController::class, 'delete'])->name('admin.berita.delete');
+        Route::get('berita/delete', [BeritaController::class, 'delete'])->name('admin.berita.delete');
         Route::get('berita/getDetail-{id}', [BeritaController::class, 'getDetail'])->name('admin.berita.getDetail');
         Route::get('berita/getEskul', [BeritaController::class, 'getEskul'])->name('admin.berita.getEskul');
 

@@ -126,11 +126,11 @@
                 }).then((result) => {
                     if (result.isConfirmed) {
                         $.ajax({
-                            type: "DELETE",
+                            type: "GET",
                             url: "{{ route('admin.eskul.forceDelete') }}",
                             data: {
                                 "_token": "{{ csrf_token() }}",
-                                "_method": "DELETE",
+                                "_method": "GET",
                                 "id": id,
                             },
                             success: function() {
