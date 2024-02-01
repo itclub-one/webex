@@ -73,13 +73,14 @@
 
 </html>
 <script src="{{ asset('jquery/dist/jquery.js') }}"></script>
+<script src="{{ asset('webex/js/vendors.js') }}"></script>
+<script src="{{ asset('webex/js/main.js') }}"></script>
 
 <script src="https://unpkg.com/leaflet%401.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+    {{-- Select2 JS --}}
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    
     @stack('js')
-<script src="{{ asset('webex/js/vendors.js') }}"></script>
-<script src="{{ asset('webex/js/main.js') }}"></script>
-{{-- Select2 JS --}}
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-

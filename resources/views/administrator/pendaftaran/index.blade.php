@@ -204,7 +204,7 @@
                                 data_table.ajax.reload(null, false);
                                 swalWithBootstrapButtons.fire({
                                     title: 'Berhasil!',
-                                    text: 'Data berhasil dihapus.',
+                                    text: 'Data berhasil dipindahkan menjadi anggota.',
                                     icon: 'success',
                                     timer: 1500, // 2 detik
                                     showConfirmButton: false
@@ -262,7 +262,7 @@
                                 data_table.ajax.reload(null, false);
                                 swalWithBootstrapButtons.fire({
                                     title: 'Berhasil!',
-                                    text: 'Data berhasil dihapus.',
+                                    text: 'Data berhasil ditolak.',
                                     icon: 'success',
                                     timer: 1500, // 2 detik
                                     showConfirmButton: false

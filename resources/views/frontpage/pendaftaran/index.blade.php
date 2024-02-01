@@ -67,12 +67,12 @@
                         <h3 class="text-24 fw-500">Masukan Data anda</h3>
                         <p class="mt-25">Pilih Ekstrakurikuler sesuai dengan kemauan anda</p>
                         @if ($message = Session::get('success'))
-                            <div style="width: 500px">
+                            <div style="width: 100%">
                                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                                     <i type="button" class="fa-solid fa-xmark mx-2" style="color: black; "
                                         data-bs-dismiss="alert" aria-label="Close">
                                     </i>
-                                    <p><strong>Success! </strong>{{ $message }}</p>
+                                    <p style="color: black!important"><strong>Success! </strong>{{ $message }}</p>
                                 </div>
                                 <br>
                                 <strong>Segera Lihat Email Anda!</strong>
@@ -80,12 +80,12 @@
                         @endif
 
                         @if ($message = Session::get('error'))
-                            <div style="width: 500px">
+                            <div style="width: 100%">
                                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                     <i type="button" class="fa-solid fa-xmark mx-2" style="color: black; "
                                         data-bs-dismiss="alert" aria-label="Close">
                                     </i>
-                                    <p><strong>Error! </strong>{{ $message }}</p>
+                                    <p style="color: black!important"><strong>Error! </strong>{{ $message }}</p>
                                 </div>
                             </div>
                         @endif
@@ -190,6 +190,20 @@
 
 @push('css')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/src/parsley.min.css">
+
+    <style>
+           .nice-select-dropdown .list {
+        height: 100% !important;
+        max-height: 100% !important;
+        overflow: auto !important;
+    }
+    
+    .nice-select.open .nice-select-dropdown {
+        max-height: 240px; /*or whatever height you want*/
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    </style>
 @endpush
 
 @push('js')
@@ -203,11 +217,11 @@
 
             const submitButton = document.getElementById("formSubmit");
 
-            form.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                }
-            });
+            // form.addEventListener('keydown', function(e) {
+            //     if (e.key === 'Enter') {
+            //         e.preventDefault();
+            //     }
+            // });
 
             submitButton.addEventListener("click", async function(e) {
                 e.preventDefault();

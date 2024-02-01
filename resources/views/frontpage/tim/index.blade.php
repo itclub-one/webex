@@ -56,7 +56,7 @@
                         Garut dalam melakukan manajemen setiap ekstrakurikuler di SMKN 1 Garut ,
                         Sistem Informasi Ekstrakurikuler merupakan hasil dari kolaborasi antara OSIS dan seluruh
                         ekstrakurikuler yang ada di SMKN 1 Garut yang dibangun oleh
-                        Siswa kami yang bernama Naufal Rabani, Yofi Ilham Fauzi, Mochammad Ikhsan Nawawi dan Yusuf Sekhan
+                        Siswa kami yang bernama Mochammad Ikhsan Nawawi, Naufal Rabani, Yofi Ilham Fauzi dan Yusuf Sekhan
                         dengan bimbingan bapak Andriansyah Maulana, S.Kom., M.Kom. sebagai pembimbing IT Club SMKN 1 Garut
                         Periode 2020 - Sekarang yang termasuk program kerja dari kepengurusan IT Club 2022 yang dipimpin
                         oleh Naufal Rabani dan Yusuf Sekhan
@@ -117,6 +117,33 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="teamCard -type-1 -teamCard-hover">
                         <div class="teamCard__image">
+                            <img style="width: 300px; height: 350px;" src="{{ asset('images/tentang-web/ikhsan.png') }}"
+                                alt="image">
+                            <div class="teamCard__socials">
+                                <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
+                                    <a href="https://instagram.com/ikhsannwwi"><i class="icon-instagram text-white"></i></a>
+                                    <a href="https://www.linkedin.com/in/mochammad-ikhsan-nawawi/"><i
+                                            class="icon-linkedin text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamCard__content">
+                            <h4 class="teamCard__title">Mochammad Ikhsan Nawawi</h4>
+                            <p class="teamCard__text">Fullstack Develover</p>
+
+                        </div>
+                        <div class="teamCard-footer">
+                            <div class="teamCard-footer__author">
+                                <img src="{{ asset('images/logo-eskul/paskibra.png') }}" alt="Pengembang">
+                                <div>Paskibra</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="teamCard -type-1 -teamCard-hover">
+                        <div class="teamCard__image">
                             <img style="width: 300px; height: 350px;" src="{{ asset('images/tentang-web/naufal.png') }}"
                                 alt="image">
                             <div class="teamCard__socials">
@@ -137,33 +164,6 @@
                             <div class="teamCard-footer__author">
                                 <img src="{{ asset('images/logo-eskul/itclub.png') }}" alt="Pengembang">
                                 <div>IT-Club</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                    <div class="teamCard -type-1 -teamCard-hover">
-                        <div class="teamCard__image">
-                            <img style="width: 300px; height: 350px;" src="{{ asset('images/tentang-web/ikhsan.png') }}"
-                                alt="image">
-                            <div class="teamCard__socials">
-                                <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
-                                    <a href="https://instagram.com/ikhsannwwi"><i class="icon-instagram text-white"></i></a>
-                                    <a href="https://www.linkedin.com/in/mochammad-ikhsan-nawawi/"><i
-                                            class="icon-linkedin text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="teamCard__content">
-                            <h4 class="teamCard__title">Mochammad Ikhsan Nawawi</h4>
-                            <p class="teamCard__text">Fullstack Develover</p>
-
-                        </div>
-                        <div class="teamCard-footer">
-                            <div class="teamCard-footer__author">
-                                <img src="{{ asset('images/logo-eskul/paskibra.png') }}" alt="Pengembang">
-                                <div>Paskibra</div>
                             </div>
                         </div>
                     </div>
