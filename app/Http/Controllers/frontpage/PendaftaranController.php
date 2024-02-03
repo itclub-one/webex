@@ -60,7 +60,7 @@ class PendaftaranController extends Controller
 
     
             createLog('pendaftaran', __FUNCTION__, $data->id, ['Data web yang disimpan' => $data]);
-            return redirect()->route('web.pendaftaran')->with('success', 'Berhasil mendaftar ke ' . $eskul->nama);
+            return redirect()->route('web.pendaftaran')->with('success', 'Berhasil mendaftar ke Ekstrakurikuler ' . $eskul->nama . '. Segera lihat pesan email dari kami');
         } catch (\Exception $e) {
             dd($e);
             return redirect()->route('web.pendaftaran')->with('error', 'Gagal mendaftar. Periksa kembali input Anda.');

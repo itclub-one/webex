@@ -35,12 +35,18 @@
     <link rel="stylesheet" href="{{ asset('webex/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('webex/css/vendors.css') }}">
 
+    <link rel="stylesheet" href="{{ asset_administrator('assets/plugins/sweetalert2/sweetalert2.min.css') }}">
+
     @stack('css')
     <title>{{ array_key_exists('nama_app_admin', $settings) ? $settings['nama_app_admin'] : '' }}</title>
 
 </head>
 
 <body class="preloader-visible" data-barba="wrapper">
+
+    <div id="audioContainer" class="audioContainer">
+        <!-- Other content in the container -->
+     </div>
 
     <!-- preloader start -->
     <div class="preloader js-preloader">
@@ -81,6 +87,21 @@
     crossorigin=""></script>
     {{-- Select2 JS --}}
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="{{ asset_administrator('assets/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
+    <script src="{{ asset_administrator('assets/plugins/sweetalert2/toast.js') }}"></script>
+    <script src="{{ asset_administrator('assets/plugins/sweetalert2/page/toast.js') }}"></script>
     
     
     @stack('js')
+
+    <script>
+        var toastMessages = {
+            path: "{{ asset_administrator('assets/plugins/toasty/') }}",
+            errors: [],
+            error: @json(session('error')),
+            success: @json(session('success')),
+            warning: @json(session('warning')),
+            info: @json(session('info'))
+        };
+    </script>

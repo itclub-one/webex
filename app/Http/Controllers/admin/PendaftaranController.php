@@ -499,7 +499,7 @@ class PendaftaranController extends Controller
 
         return response()->json([
             'status' => 'success',
-            'message' => 'Data telah dihapus.',
+            'message' => 'Data telah dihapus/ditolak.',
         ]);
     }
 
